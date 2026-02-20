@@ -1,0 +1,144 @@
+20ms [UE-CONN] [N11D0] IMSI=1 Cell=1 RNTI=1
+20ms [ENB-CONN] [N4D0] Cell=1 IMSI=1 RNTI=1
+38680ms [CHO-EVENT] [N4D0] A3ConditionSatisfied actor=Source-gNB action=PROCESS io=internal message=MeasurementReport/A3 UE-RNTI=1 tgtCell=2 srvRsrp=74 tgtRsrp=76 cand=0
+38680ms [CHO-EVENT] [N4D0] A3ConditionSatisfied actor=Source-gNB action=PROCESS io=internal message=MeasurementReport/A3 UE-RNTI=1 tgtCell=3 srvRsrp=74 tgtRsrp=75 cand=0
+38680ms [CHO-EVENT] [N4D0] ChoPrepareStart actor=Source-gNB action=PROCESS io=internal message=ChoPrepareStart UE-RNTI=1 tgtCell=2 srvRsrp=74 tgtRsrp=76 cand=2
+38681ms [CHO-EVENT] [N4D0] HoRequestSentToCandidates actor=Source-gNB action=TX io=out message=HoPreparation UE-RNTI=1 tgtCell=2 srvRsrp=74 tgtRsrp=76 cand=2
+38692ms [CHO-EVENT] [N4D0] HoRequestAckReceived actor=Source-gNB action=RX io=in message=HoPreparation UE-RNTI=1 tgtCell=2 srvRsrp=74 tgtRsrp=76 cand=2
+38692ms [CHO-EVENT] [N4D0] RrcReconfigurationWithChoSent actor=Source-gNB action=TX io=out message=RrcReconfiguration(CHO) UE-RNTI=1 tgtCell=2 srvRsrp=74 tgtRsrp=76 cand=2
+38694ms [CHO-EVENT] [N4D0] ChoStoredInUe actor=UE action=PROCESS io=internal message=RrcReconfiguration(CHO) UE-RNTI=1 tgtCell=2 srvRsrp=74 tgtRsrp=76 cand=2
+39704ms [CHO-EVENT] [N4D0] A3ConditionSatisfied actor=Source-gNB action=PROCESS io=internal message=MeasurementReport/A3 UE-RNTI=1 tgtCell=2 srvRsrp=74 tgtRsrp=77 cand=0
+39704ms [CHO-EVENT] [N4D0] A3ConditionSatisfied actor=Source-gNB action=PROCESS io=internal message=MeasurementReport/A3 UE-RNTI=1 tgtCell=3 srvRsrp=74 tgtRsrp=75 cand=0
+39704ms [CHO-EVENT] [N4D0] ChoExecutionConditionMet actor=Unknown action=PROCESS io=internal message=ChoExecutionConditionMet UE-RNTI=1 tgtCell=2 srvRsrp=74 tgtRsrp=77 cand=2
+39704ms [CHO-EVENT] [N4D0] ChoExecutionStart actor=UE action=PROCESS io=internal message=ChoExecutionStart UE-RNTI=1 tgtCell=2 srvRsrp=74 tgtRsrp=77 cand=2
+39704ms [CHO-RA] [N4D0] Step5_RA_Msg1Preamble_TxByUe UE-RNTI=1 | actor=UE action=TX message=RA-Msg1(Preamble) to=Target-gNB(cellId=2)
+39705ms [CHO-RA] [N4D0] Step5_RA_Msg1Preamble_RxByTarget UE-RNTI=1 | actor=Target-gNB(cellId=2) action=RX message=RA-Msg1(Preamble)
+39706ms [CHO-RA] [N4D0] Step5_RA_Msg2RAR_TxByTarget UE-RNTI=1 | actor=Target-gNB(cellId=2) action=TX message=RA-Msg2(RAR) to=UE
+39707ms [CHO-RA] [N4D0] Step5_RA_Msg2RAR_RxByUe UE-RNTI=1 | actor=UE action=RX message=RA-Msg2(RAR) from=Target-gNB(cellId=2)
+39708ms [CHO-RA] [N4D0] Step5_RA_Msg3Req_TxByUe UE-RNTI=1 | actor=UE action=TX message=RA-Msg3(Request) to=Target-gNB(cellId=2)
+39709ms [CHO-RA] [N4D0] Step5_RA_Msg3Req_RxByTarget UE-RNTI=1 | actor=Target-gNB(cellId=2) action=RX message=RA-Msg3(Request)
+39710ms [CHO-RA] [N4D0] Step5_RA_Msg4ContRes_TxByTarget UE-RNTI=1 | actor=Target-gNB(cellId=2) action=TX message=RA-Msg4(ContentionResolution) to=UE
+39711ms [CHO-RA] [N4D0] Step5_RA_Msg4ContRes_RxByUe UE-RNTI=1 | actor=UE action=RX message=RA-Msg4(ContentionResolution) from=Target-gNB(cellId=2)
+39712ms [CHO-RA] [N4D0] Step5_RA_RrcReconfigComplete_TxByUe UE-RNTI=1 | actor=UE action=TX message=RrcReconfigurationComplete to=Target-gNB(cellId=2)
+39713ms [CHO-RA] [N4D0] Step5_RA_RrcReconfigComplete_RxByTarget UE-RNTI=1 | actor=Target-gNB(cellId=2) action=RX message=RrcReconfigurationComplete
+39704ms [CHO-RA] [N4D0] Step5_RandomAccessStart UE-RNTI=1 | actor=UE action=PROCESS stage=RandomAccessTimeline startMs=39704 completeMs=39713
+39713ms [CHO-RA] [N4D0] Step5_RandomAccessComplete UE-RNTI=1 | actor=Target-gNB action=PROCESS message=RrcReconfigurationComplete result=RandomAccessCompleted atMs=39713
+39713ms [CHO-EVENT] [N4D0] TriggerHandoverCalled actor=Source-gNB action=PROCESS io=internal message=TriggerHandover UE-RNTI=1 tgtCell=2 srvRsrp=74 tgtRsrp=77 cand=2
+39713ms [ENB-HO-START] [N4D0] srcCell=1 tgtCell=2 IMSI=1 RNTI=1
+39713ms [UE-HO-START] [N11D0] IMSI=1 srcCell=1 tgtCell=2 RNTI=1
+39717ms [UE-HO-END] [N11D0] IMSI=1 newCell=2 RNTI=1
+39717ms [ENB-HO-END] [N5D0] newCell=2 IMSI=1 RNTI=1
+50656ms [CHO-EVENT] [N5D0] A3ConditionSatisfied actor=Source-gNB action=PROCESS io=internal message=MeasurementReport/A3 UE-RNTI=1 tgtCell=3 srvRsrp=95 tgtRsrp=97 cand=0
+50656ms [CHO-EVENT] [N5D0] ChoPrepareStart actor=Source-gNB action=PROCESS io=internal message=ChoPrepareStart UE-RNTI=1 tgtCell=3 srvRsrp=95 tgtRsrp=97 cand=1
+50657ms [CHO-EVENT] [N5D0] HoRequestSentToCandidates actor=Source-gNB action=TX io=out message=HoPreparation UE-RNTI=1 tgtCell=3 srvRsrp=95 tgtRsrp=97 cand=1
+50667ms [CHO-EVENT] [N5D0] HoRequestAckReceived actor=Source-gNB action=RX io=in message=HoPreparation UE-RNTI=1 tgtCell=3 srvRsrp=95 tgtRsrp=97 cand=1
+50667ms [CHO-EVENT] [N5D0] RrcReconfigurationWithChoSent actor=Source-gNB action=TX io=out message=RrcReconfiguration(CHO) UE-RNTI=1 tgtCell=3 srvRsrp=95 tgtRsrp=97 cand=1
+50669ms [CHO-EVENT] [N5D0] ChoStoredInUe actor=UE action=PROCESS io=internal message=RrcReconfiguration(CHO) UE-RNTI=1 tgtCell=3 srvRsrp=95 tgtRsrp=97 cand=1
+51680ms [CHO-EVENT] [N5D0] A3ConditionSatisfied actor=Source-gNB action=PROCESS io=internal message=MeasurementReport/A3 UE-RNTI=1 tgtCell=3 srvRsrp=90 tgtRsrp=97 cand=0
+51680ms [CHO-EVENT] [N5D0] A3ConditionSatisfied actor=Source-gNB action=PROCESS io=internal message=MeasurementReport/A3 UE-RNTI=1 tgtCell=4 srvRsrp=90 tgtRsrp=92 cand=0
+51680ms [CHO-EVENT] [N5D0] ChoExecutionConditionMet actor=Unknown action=PROCESS io=internal message=ChoExecutionConditionMet UE-RNTI=1 tgtCell=3 srvRsrp=90 tgtRsrp=97 cand=1
+51680ms [CHO-EVENT] [N5D0] ChoExecutionStart actor=UE action=PROCESS io=internal message=ChoExecutionStart UE-RNTI=1 tgtCell=3 srvRsrp=90 tgtRsrp=97 cand=1
+51680ms [CHO-RA] [N5D0] Step5_RA_Msg1Preamble_TxByUe UE-RNTI=1 | actor=UE action=TX message=RA-Msg1(Preamble) to=Target-gNB(cellId=3)
+51681ms [CHO-RA] [N5D0] Step5_RA_Msg1Preamble_RxByTarget UE-RNTI=1 | actor=Target-gNB(cellId=3) action=RX message=RA-Msg1(Preamble)
+51682ms [CHO-RA] [N5D0] Step5_RA_Msg2RAR_TxByTarget UE-RNTI=1 | actor=Target-gNB(cellId=3) action=TX message=RA-Msg2(RAR) to=UE
+51683ms [CHO-RA] [N5D0] Step5_RA_Msg2RAR_RxByUe UE-RNTI=1 | actor=UE action=RX message=RA-Msg2(RAR) from=Target-gNB(cellId=3)
+51684ms [CHO-RA] [N5D0] Step5_RA_Msg3Req_TxByUe UE-RNTI=1 | actor=UE action=TX message=RA-Msg3(Request) to=Target-gNB(cellId=3)
+51685ms [CHO-RA] [N5D0] Step5_RA_Msg3Req_RxByTarget UE-RNTI=1 | actor=Target-gNB(cellId=3) action=RX message=RA-Msg3(Request)
+51686ms [CHO-RA] [N5D0] Step5_RA_Msg4ContRes_TxByTarget UE-RNTI=1 | actor=Target-gNB(cellId=3) action=TX message=RA-Msg4(ContentionResolution) to=UE
+51687ms [CHO-RA] [N5D0] Step5_RA_Msg4ContRes_RxByUe UE-RNTI=1 | actor=UE action=RX message=RA-Msg4(ContentionResolution) from=Target-gNB(cellId=3)
+51688ms [CHO-RA] [N5D0] Step5_RA_RrcReconfigComplete_TxByUe UE-RNTI=1 | actor=UE action=TX message=RrcReconfigurationComplete to=Target-gNB(cellId=3)
+51689ms [CHO-RA] [N5D0] Step5_RA_RrcReconfigComplete_RxByTarget UE-RNTI=1 | actor=Target-gNB(cellId=3) action=RX message=RrcReconfigurationComplete
+51680ms [CHO-RA] [N5D0] Step5_RandomAccessStart UE-RNTI=1 | actor=UE action=PROCESS stage=RandomAccessTimeline startMs=51680 completeMs=51689
+51689ms [CHO-RA] [N5D0] Step5_RandomAccessComplete UE-RNTI=1 | actor=Target-gNB action=PROCESS message=RrcReconfigurationComplete result=RandomAccessCompleted atMs=51689
+51689ms [CHO-EVENT] [N5D0] TriggerHandoverCalled actor=Source-gNB action=PROCESS io=internal message=TriggerHandover UE-RNTI=1 tgtCell=3 srvRsrp=90 tgtRsrp=97 cand=1
+51689ms [ENB-HO-START] [N5D0] srcCell=2 tgtCell=3 IMSI=1 RNTI=1
+51689ms [UE-HO-START] [N11D0] IMSI=1 srcCell=2 tgtCell=3 RNTI=1
+51693ms [UE-HO-END] [N11D0] IMSI=1 newCell=3 RNTI=1
+51693ms [ENB-HO-END] [N6D0] newCell=3 IMSI=1 RNTI=1
+52656ms [CHO-EVENT] [N6D0] A3ConditionSatisfied actor=Source-gNB action=PROCESS io=internal message=MeasurementReport/A3 UE-RNTI=1 tgtCell=4 srvRsrp=95 tgtRsrp=97 cand=0
+52656ms [CHO-EVENT] [N6D0] ChoPrepareStart actor=Source-gNB action=PROCESS io=internal message=ChoPrepareStart UE-RNTI=1 tgtCell=4 srvRsrp=95 tgtRsrp=97 cand=1
+52657ms [CHO-EVENT] [N6D0] HoRequestSentToCandidates actor=Source-gNB action=TX io=out message=HoPreparation UE-RNTI=1 tgtCell=4 srvRsrp=95 tgtRsrp=97 cand=1
+52667ms [CHO-EVENT] [N6D0] HoRequestAckReceived actor=Source-gNB action=RX io=in message=HoPreparation UE-RNTI=1 tgtCell=4 srvRsrp=95 tgtRsrp=97 cand=1
+52667ms [CHO-EVENT] [N6D0] RrcReconfigurationWithChoSent actor=Source-gNB action=TX io=out message=RrcReconfiguration(CHO) UE-RNTI=1 tgtCell=4 srvRsrp=95 tgtRsrp=97 cand=1
+52669ms [CHO-EVENT] [N6D0] ChoStoredInUe actor=UE action=PROCESS io=internal message=RrcReconfiguration(CHO) UE-RNTI=1 tgtCell=4 srvRsrp=95 tgtRsrp=97 cand=1
+53680ms [CHO-EVENT] [N6D0] A3ConditionSatisfied actor=Source-gNB action=PROCESS io=internal message=MeasurementReport/A3 UE-RNTI=1 tgtCell=4 srvRsrp=90 tgtRsrp=97 cand=0
+53680ms [CHO-EVENT] [N6D0] ChoExecutionConditionMet actor=Unknown action=PROCESS io=internal message=ChoExecutionConditionMet UE-RNTI=1 tgtCell=4 srvRsrp=90 tgtRsrp=97 cand=1
+53680ms [CHO-EVENT] [N6D0] ChoExecutionStart actor=UE action=PROCESS io=internal message=ChoExecutionStart UE-RNTI=1 tgtCell=4 srvRsrp=90 tgtRsrp=97 cand=1
+53680ms [CHO-RA] [N6D0] Step5_RA_Msg1Preamble_TxByUe UE-RNTI=1 | actor=UE action=TX message=RA-Msg1(Preamble) to=Target-gNB(cellId=4)
+53681ms [CHO-RA] [N6D0] Step5_RA_Msg1Preamble_RxByTarget UE-RNTI=1 | actor=Target-gNB(cellId=4) action=RX message=RA-Msg1(Preamble)
+53682ms [CHO-RA] [N6D0] Step5_RA_Msg2RAR_TxByTarget UE-RNTI=1 | actor=Target-gNB(cellId=4) action=TX message=RA-Msg2(RAR) to=UE
+53683ms [CHO-RA] [N6D0] Step5_RA_Msg2RAR_RxByUe UE-RNTI=1 | actor=UE action=RX message=RA-Msg2(RAR) from=Target-gNB(cellId=4)
+53684ms [CHO-RA] [N6D0] Step5_RA_Msg3Req_TxByUe UE-RNTI=1 | actor=UE action=TX message=RA-Msg3(Request) to=Target-gNB(cellId=4)
+53685ms [CHO-RA] [N6D0] Step5_RA_Msg3Req_RxByTarget UE-RNTI=1 | actor=Target-gNB(cellId=4) action=RX message=RA-Msg3(Request)
+53686ms [CHO-RA] [N6D0] Step5_RA_Msg4ContRes_TxByTarget UE-RNTI=1 | actor=Target-gNB(cellId=4) action=TX message=RA-Msg4(ContentionResolution) to=UE
+53687ms [CHO-RA] [N6D0] Step5_RA_Msg4ContRes_RxByUe UE-RNTI=1 | actor=UE action=RX message=RA-Msg4(ContentionResolution) from=Target-gNB(cellId=4)
+53688ms [CHO-RA] [N6D0] Step5_RA_RrcReconfigComplete_TxByUe UE-RNTI=1 | actor=UE action=TX message=RrcReconfigurationComplete to=Target-gNB(cellId=4)
+53689ms [CHO-RA] [N6D0] Step5_RA_RrcReconfigComplete_RxByTarget UE-RNTI=1 | actor=Target-gNB(cellId=4) action=RX message=RrcReconfigurationComplete
+53680ms [CHO-RA] [N6D0] Step5_RandomAccessStart UE-RNTI=1 | actor=UE action=PROCESS stage=RandomAccessTimeline startMs=53680 completeMs=53689
+53689ms [CHO-RA] [N6D0] Step5_RandomAccessComplete UE-RNTI=1 | actor=Target-gNB action=PROCESS message=RrcReconfigurationComplete result=RandomAccessCompleted atMs=53689
+53689ms [CHO-EVENT] [N6D0] TriggerHandoverCalled actor=Source-gNB action=PROCESS io=internal message=TriggerHandover UE-RNTI=1 tgtCell=4 srvRsrp=90 tgtRsrp=97 cand=1
+53689ms [ENB-HO-START] [N6D0] srcCell=3 tgtCell=4 IMSI=1 RNTI=1
+53689ms [UE-HO-START] [N11D0] IMSI=1 srcCell=3 tgtCell=4 RNTI=1
+53693ms [UE-HO-END] [N11D0] IMSI=1 newCell=4 RNTI=1
+53693ms [ENB-HO-END] [N7D0] newCell=4 IMSI=1 RNTI=1
+64256ms [CHO-EVENT] [N7D0] A3ConditionSatisfied actor=Source-gNB action=PROCESS io=internal message=MeasurementReport/A3 UE-RNTI=1 tgtCell=5 srvRsrp=76 tgtRsrp=77 cand=0
+64256ms [CHO-EVENT] [N7D0] ChoPrepareStart actor=Source-gNB action=PROCESS io=internal message=ChoPrepareStart UE-RNTI=1 tgtCell=5 srvRsrp=76 tgtRsrp=77 cand=1
+64257ms [CHO-EVENT] [N7D0] HoRequestSentToCandidates actor=Source-gNB action=TX io=out message=HoPreparation UE-RNTI=1 tgtCell=5 srvRsrp=76 tgtRsrp=77 cand=1
+64267ms [CHO-EVENT] [N7D0] HoRequestAckReceived actor=Source-gNB action=RX io=in message=HoPreparation UE-RNTI=1 tgtCell=5 srvRsrp=76 tgtRsrp=77 cand=1
+64267ms [CHO-EVENT] [N7D0] RrcReconfigurationWithChoSent actor=Source-gNB action=TX io=out message=RrcReconfiguration(CHO) UE-RNTI=1 tgtCell=5 srvRsrp=76 tgtRsrp=77 cand=1
+64269ms [CHO-EVENT] [N7D0] ChoStoredInUe actor=UE action=PROCESS io=internal message=RrcReconfiguration(CHO) UE-RNTI=1 tgtCell=5 srvRsrp=76 tgtRsrp=77 cand=1
+65460ms [UE-CONN] [N11D0] IMSI=1 Cell=5 RNTI=1
+65460ms [ENB-CONN] [N8D0] Cell=5 IMSI=1 RNTI=1
+75656ms [CHO-EVENT] [N8D0] A3ConditionSatisfied actor=Source-gNB action=PROCESS io=internal message=MeasurementReport/A3 UE-RNTI=1 tgtCell=6 srvRsrp=95 tgtRsrp=97 cand=0
+75656ms [CHO-EVENT] [N8D0] ChoPrepareStart actor=Source-gNB action=PROCESS io=internal message=ChoPrepareStart UE-RNTI=1 tgtCell=6 srvRsrp=95 tgtRsrp=97 cand=1
+75657ms [CHO-EVENT] [N8D0] HoRequestSentToCandidates actor=Source-gNB action=TX io=out message=HoPreparation UE-RNTI=1 tgtCell=6 srvRsrp=95 tgtRsrp=97 cand=1
+75667ms [CHO-EVENT] [N8D0] HoRequestAckReceived actor=Source-gNB action=RX io=in message=HoPreparation UE-RNTI=1 tgtCell=6 srvRsrp=95 tgtRsrp=97 cand=1
+75667ms [CHO-EVENT] [N8D0] RrcReconfigurationWithChoSent actor=Source-gNB action=TX io=out message=RrcReconfiguration(CHO) UE-RNTI=1 tgtCell=6 srvRsrp=95 tgtRsrp=97 cand=1
+75669ms [CHO-EVENT] [N8D0] ChoStoredInUe actor=UE action=PROCESS io=internal message=RrcReconfiguration(CHO) UE-RNTI=1 tgtCell=6 srvRsrp=95 tgtRsrp=97 cand=1
+76680ms [CHO-EVENT] [N8D0] A3ConditionSatisfied actor=Source-gNB action=PROCESS io=internal message=MeasurementReport/A3 UE-RNTI=1 tgtCell=6 srvRsrp=90 tgtRsrp=97 cand=0
+76680ms [CHO-EVENT] [N8D0] A3ConditionSatisfied actor=Source-gNB action=PROCESS io=internal message=MeasurementReport/A3 UE-RNTI=1 tgtCell=7 srvRsrp=90 tgtRsrp=92 cand=0
+76680ms [CHO-EVENT] [N8D0] ChoExecutionConditionMet actor=Unknown action=PROCESS io=internal message=ChoExecutionConditionMet UE-RNTI=1 tgtCell=6 srvRsrp=90 tgtRsrp=97 cand=1
+76680ms [CHO-EVENT] [N8D0] ChoExecutionStart actor=UE action=PROCESS io=internal message=ChoExecutionStart UE-RNTI=1 tgtCell=6 srvRsrp=90 tgtRsrp=97 cand=1
+76680ms [CHO-RA] [N8D0] Step5_RA_Msg1Preamble_TxByUe UE-RNTI=1 | actor=UE action=TX message=RA-Msg1(Preamble) to=Target-gNB(cellId=6)
+76681ms [CHO-RA] [N8D0] Step5_RA_Msg1Preamble_RxByTarget UE-RNTI=1 | actor=Target-gNB(cellId=6) action=RX message=RA-Msg1(Preamble)
+76682ms [CHO-RA] [N8D0] Step5_RA_Msg2RAR_TxByTarget UE-RNTI=1 | actor=Target-gNB(cellId=6) action=TX message=RA-Msg2(RAR) to=UE
+76683ms [CHO-RA] [N8D0] Step5_RA_Msg2RAR_RxByUe UE-RNTI=1 | actor=UE action=RX message=RA-Msg2(RAR) from=Target-gNB(cellId=6)
+76684ms [CHO-RA] [N8D0] Step5_RA_Msg3Req_TxByUe UE-RNTI=1 | actor=UE action=TX message=RA-Msg3(Request) to=Target-gNB(cellId=6)
+76685ms [CHO-RA] [N8D0] Step5_RA_Msg3Req_RxByTarget UE-RNTI=1 | actor=Target-gNB(cellId=6) action=RX message=RA-Msg3(Request)
+76686ms [CHO-RA] [N8D0] Step5_RA_Msg4ContRes_TxByTarget UE-RNTI=1 | actor=Target-gNB(cellId=6) action=TX message=RA-Msg4(ContentionResolution) to=UE
+76687ms [CHO-RA] [N8D0] Step5_RA_Msg4ContRes_RxByUe UE-RNTI=1 | actor=UE action=RX message=RA-Msg4(ContentionResolution) from=Target-gNB(cellId=6)
+76688ms [CHO-RA] [N8D0] Step5_RA_RrcReconfigComplete_TxByUe UE-RNTI=1 | actor=UE action=TX message=RrcReconfigurationComplete to=Target-gNB(cellId=6)
+76689ms [CHO-RA] [N8D0] Step5_RA_RrcReconfigComplete_RxByTarget UE-RNTI=1 | actor=Target-gNB(cellId=6) action=RX message=RrcReconfigurationComplete
+76680ms [CHO-RA] [N8D0] Step5_RandomAccessStart UE-RNTI=1 | actor=UE action=PROCESS stage=RandomAccessTimeline startMs=76680 completeMs=76689
+76689ms [CHO-RA] [N8D0] Step5_RandomAccessComplete UE-RNTI=1 | actor=Target-gNB action=PROCESS message=RrcReconfigurationComplete result=RandomAccessCompleted atMs=76689
+76689ms [CHO-EVENT] [N8D0] TriggerHandoverCalled actor=Source-gNB action=PROCESS io=internal message=TriggerHandover UE-RNTI=1 tgtCell=6 srvRsrp=90 tgtRsrp=97 cand=1
+76689ms [ENB-HO-START] [N8D0] srcCell=5 tgtCell=6 IMSI=1 RNTI=1
+76689ms [UE-HO-START] [N11D0] IMSI=1 srcCell=5 tgtCell=6 RNTI=1
+76693ms [UE-HO-END] [N11D0] IMSI=1 newCell=6 RNTI=1
+76693ms [ENB-HO-END] [N9D0] newCell=6 IMSI=1 RNTI=1
+77656ms [CHO-EVENT] [N9D0] A3ConditionSatisfied actor=Source-gNB action=PROCESS io=internal message=MeasurementReport/A3 UE-RNTI=1 tgtCell=7 srvRsrp=95 tgtRsrp=97 cand=0
+77656ms [CHO-EVENT] [N9D0] ChoPrepareStart actor=Source-gNB action=PROCESS io=internal message=ChoPrepareStart UE-RNTI=1 tgtCell=7 srvRsrp=95 tgtRsrp=97 cand=1
+77657ms [CHO-EVENT] [N9D0] HoRequestSentToCandidates actor=Source-gNB action=TX io=out message=HoPreparation UE-RNTI=1 tgtCell=7 srvRsrp=95 tgtRsrp=97 cand=1
+77667ms [CHO-EVENT] [N9D0] HoRequestAckReceived actor=Source-gNB action=RX io=in message=HoPreparation UE-RNTI=1 tgtCell=7 srvRsrp=95 tgtRsrp=97 cand=1
+77667ms [CHO-EVENT] [N9D0] RrcReconfigurationWithChoSent actor=Source-gNB action=TX io=out message=RrcReconfiguration(CHO) UE-RNTI=1 tgtCell=7 srvRsrp=95 tgtRsrp=97 cand=1
+77669ms [CHO-EVENT] [N9D0] ChoStoredInUe actor=UE action=PROCESS io=internal message=RrcReconfiguration(CHO) UE-RNTI=1 tgtCell=7 srvRsrp=95 tgtRsrp=97 cand=1
+78680ms [CHO-EVENT] [N9D0] A3ConditionSatisfied actor=Source-gNB action=PROCESS io=internal message=MeasurementReport/A3 UE-RNTI=1 tgtCell=7 srvRsrp=90 tgtRsrp=97 cand=0
+78680ms [CHO-EVENT] [N9D0] ChoExecutionConditionMet actor=Unknown action=PROCESS io=internal message=ChoExecutionConditionMet UE-RNTI=1 tgtCell=7 srvRsrp=90 tgtRsrp=97 cand=1
+78680ms [CHO-EVENT] [N9D0] ChoExecutionStart actor=UE action=PROCESS io=internal message=ChoExecutionStart UE-RNTI=1 tgtCell=7 srvRsrp=90 tgtRsrp=97 cand=1
+78680ms [CHO-RA] [N9D0] Step5_RA_Msg1Preamble_TxByUe UE-RNTI=1 | actor=UE action=TX message=RA-Msg1(Preamble) to=Target-gNB(cellId=7)
+78681ms [CHO-RA] [N9D0] Step5_RA_Msg1Preamble_RxByTarget UE-RNTI=1 | actor=Target-gNB(cellId=7) action=RX message=RA-Msg1(Preamble)
+78682ms [CHO-RA] [N9D0] Step5_RA_Msg2RAR_TxByTarget UE-RNTI=1 | actor=Target-gNB(cellId=7) action=TX message=RA-Msg2(RAR) to=UE
+78683ms [CHO-RA] [N9D0] Step5_RA_Msg2RAR_RxByUe UE-RNTI=1 | actor=UE action=RX message=RA-Msg2(RAR) from=Target-gNB(cellId=7)
+78684ms [CHO-RA] [N9D0] Step5_RA_Msg3Req_TxByUe UE-RNTI=1 | actor=UE action=TX message=RA-Msg3(Request) to=Target-gNB(cellId=7)
+78685ms [CHO-RA] [N9D0] Step5_RA_Msg3Req_RxByTarget UE-RNTI=1 | actor=Target-gNB(cellId=7) action=RX message=RA-Msg3(Request)
+78686ms [CHO-RA] [N9D0] Step5_RA_Msg4ContRes_TxByTarget UE-RNTI=1 | actor=Target-gNB(cellId=7) action=TX message=RA-Msg4(ContentionResolution) to=UE
+78687ms [CHO-RA] [N9D0] Step5_RA_Msg4ContRes_RxByUe UE-RNTI=1 | actor=UE action=RX message=RA-Msg4(ContentionResolution) from=Target-gNB(cellId=7)
+78688ms [CHO-RA] [N9D0] Step5_RA_RrcReconfigComplete_TxByUe UE-RNTI=1 | actor=UE action=TX message=RrcReconfigurationComplete to=Target-gNB(cellId=7)
+78689ms [CHO-RA] [N9D0] Step5_RA_RrcReconfigComplete_RxByTarget UE-RNTI=1 | actor=Target-gNB(cellId=7) action=RX message=RrcReconfigurationComplete
+78680ms [CHO-RA] [N9D0] Step5_RandomAccessStart UE-RNTI=1 | actor=UE action=PROCESS stage=RandomAccessTimeline startMs=78680 completeMs=78689
+78689ms [CHO-RA] [N9D0] Step5_RandomAccessComplete UE-RNTI=1 | actor=Target-gNB action=PROCESS message=RrcReconfigurationComplete result=RandomAccessCompleted atMs=78689
+78689ms [CHO-EVENT] [N9D0] TriggerHandoverCalled actor=Source-gNB action=PROCESS io=internal message=TriggerHandover UE-RNTI=1 tgtCell=7 srvRsrp=90 tgtRsrp=97 cand=1
+78689ms [ENB-HO-START] [N9D0] srcCell=6 tgtCell=7 IMSI=1 RNTI=1
+78689ms [UE-HO-START] [N11D0] IMSI=1 srcCell=6 tgtCell=7 RNTI=1
+78693ms [UE-HO-END] [N11D0] IMSI=1 newCell=7 RNTI=1
+78693ms [ENB-HO-END] [N10D0] newCell=7 IMSI=1 RNTI=1
